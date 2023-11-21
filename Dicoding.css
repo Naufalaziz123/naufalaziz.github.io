@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #c60000;
+}
+
+h3 {
+    color: #f02400;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile {
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color:red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    height: 200px;
+}
+
+.card {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color:red;
+    text-align: center;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color:black;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sejarah {
+    width: 49%;
+    margin-right: 1%;
+}
+
+#geografis {
+    width: 49%;
+    margin-left: 1%;
+}
+
+.flex-box {
+    width: 50%;
+    padding: 20px;
+}
+
+aside {
+    float: right;
+    width: 100%;
+    padding: 20px;
+}
+
+header {
+    display: inline;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container, .flex-box, #sejarah, #geografis, .row{   
+        flex-direction: column;
+        width: 100%;
+    }
+    .column > img{
+        height: 120px;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
